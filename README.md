@@ -16,14 +16,14 @@ Create a catkin workspace:
 - $ cd catkin_ws
 - $ mkdir src
 - $ catkin_make
+- Add "source ~/TSRT10_sim/catkin_ws/devel/setup.bash" to the bottom of ~/.bashrc ($ sudo nano ~/.bashrc to edit, we do this for this line to be run everytime we open the terminal, otherwise we'd have to do it manually)  
+- $ source ~/TSRT10_sim/catkin_ws/devel/setup.bash
 
-Add "source ~/TSRT10_sim/catkin_ws/devel/setup.bash" to the bottom of ~/.bashrc ($ sudo nano ~/bashrc) for this line to be run everytime you open the terminal (otherwise you have to do it manually).  
-
-Create a package in the workspace:  
-$ cd AA203/AA203_project/catkin_ws/src  
-$ catkin_create_pkg turtlebot_control std_msgs roscpp rospy  
-$ cd AA203/AA203_project/catkin_ws  
-$ catkin_make   
+Create a package in the workspace:
+- $ cd TSRT10_sim/catkin_ws/src  
+- $ catkin_create_pkg Balrog std_msgs roscpp rospy  
+- $ cd TSRT10_sim/catkin_ws  
+- $ catkin_make   
 
 Create a scripts directory in the package:  
 $ cd AA203/AA203_project/catkin_ws/src/turtlebot_control  
