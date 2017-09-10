@@ -43,10 +43,11 @@ Simulation in Gazebo:
 - Add "export GAZEBO_MODEL_PATH=~/TSRT10_sim/catkin_ws/src/asl_turtlebot/models" to the bottom of ~/.bashrc ($ sudo nano ~/.bashrc to edit, we do this for this line to be run everytime we open the terminal, otherwise we'd have to do it manually)
 - $ export GAZEBO_MODEL_PATH=~/TSRT10_sim/catkin_ws/src/asl_turtlebot/models
 
-Test the simulation:  
-$ roslaunch asl_turtlebot turtlebot_sim.launch  
-If this doesn't work, open another terminal and do this FIRST:  
-$ rosrun gazebo_ros gzclient  
+Test the simulation:
+- $ roslaunch asl_turtlebot turtlebot_sim.launch  
+
+If this doesn't work, open another terminal and do this FIRST:
+- $ rosrun gazebo_ros gzclient  
 
 Run a test controller to check that everything is working:  
 Place "test_controller.py" in ~/AA203/AA203_project/catkin_ws/src/turtlebot_control/scripts, make it executable and build the package.  
