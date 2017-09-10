@@ -10,7 +10,7 @@ ros-kinetic-turtlebot-interactions
 ros-kinetic-turtlebot-simulator  
 catkin
 
-Create a catkin workspace:  
+Create a catkin workspace:
 - $ cd TSRT10_sim
 - $ mkdir catkin_ws
 - $ cd catkin_ws
