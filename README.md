@@ -20,9 +20,9 @@ Create a catkin workspace:
 - $ source ~/TSRT10_sim/catkin_ws/devel/setup.bash
 
 Create a package in the workspace:
-- $ cd TSRT10_sim/catkin_ws/src  
+- $ cd ~/TSRT10_sim/catkin_ws/src  
 - $ catkin_create_pkg Balrog std_msgs roscpp rospy  
-- $ cd TSRT10_sim/catkin_ws  
+- $ cd ~/TSRT10_sim/catkin_ws  
 - $ catkin_make   
 
 Create a scripts directory in the package:  
