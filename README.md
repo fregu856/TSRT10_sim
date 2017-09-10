@@ -15,8 +15,9 @@ Create a catkin workspace:
 - $ mkdir catkin_ws
 - $ cd catkin_ws
 - $ mkdir src
+- $ catkin_make
 
-Add "source ~/AA203/AA203_project/catkin_ws/devel/setup.bash" to the bottom of ~/.bashrc ($ sudo nano ~/bashrc) for this line to be run everytime you open the terminal (otherwise you have to do it manually).  
+Add "source ~/TSRT10_sim/catkin_ws/devel/setup.bash" to the bottom of ~/.bashrc ($ sudo nano ~/bashrc) for this line to be run everytime you open the terminal (otherwise you have to do it manually).  
 
 Create a package in the workspace:  
 $ cd AA203/AA203_project/catkin_ws/src  
