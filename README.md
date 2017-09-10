@@ -25,22 +25,23 @@ Create a package in the workspace:
 - $ cd ~/TSRT10_sim/catkin_ws  
 - $ catkin_make   
 
-Create a scripts directory in the package:  
-$ cd AA203/AA203_project/catkin_ws/src/turtlebot_control  
-$ mkdir scripts  
+Create a python_scripts directory in the package:
+- $ cd ~/TSRT10_sim/catkin_ws/src/Balrog  
+- $ mkdir python_scripts  
 
-Every script that you write must be made executable:  
-$ chmod a+x script.py    
-You should also build the package:  
-$ cd AA203/AA203_project/catkin_ws  
-$ catkin_make  
+Every python script that you write (and place in python_scripts) must be made executable:
+- $ chmod a+x test.py    
+You should also build the package:
+- $ cd ~/TSRT10_sim/catkin_ws  
+- $ catkin_make  
 
-Simulation in Gazebo:  
-$ cd AA203/AA203_project/catkin_ws/src  
-$ git clone https://github.com/StanfordASL/asl_turtlebot.git  
-$ cd AA203/AA203_project/catkin_ws    
-$ catkin_make  
-Add "export GAZEBO_MODEL_PATH=~/AA203/AA203_project/catkin_ws/src/asl_turtlebot/models" to the bottom of ~/.bashrc ($ sudo nano ~/bashrc) for this line to be run everytime you open the terminal (otherwise you have to do it manually).  
+Simulation in Gazebo:
+- $ cd ~/TSRT10_sim/catkin_ws/src  
+- $ git clone https://github.com/StanfordASL/asl_turtlebot.git  
+- $ cd ~/TSRT10_sim/catkin_ws    
+- $ catkin_make  
+- Add "export GAZEBO_MODEL_PATH=~/TSRT10_sim/catkin_ws/src/asl_turtlebot/models" to the bottom of ~/.bashrc ($ sudo nano ~/.bashrc to edit, we do this for this line to be run everytime we open the terminal, otherwise we'd have to do it manually)
+- $ export GAZEBO_MODEL_PATH=~/TSRT10_sim/catkin_ws/src/asl_turtlebot/models
 
 Test the simulation:  
 $ roslaunch asl_turtlebot turtlebot_sim.launch  
