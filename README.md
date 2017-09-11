@@ -10,6 +10,13 @@ ros-kinetic-turtlebot-interactions
 ros-kinetic-turtlebot-simulator  
 catkin
 
+Reset the ROS IP addresses:
+- Make sure that the lines with ROS_MASTER_URI and ROS_HOSTNAME in ~/.bashrc looks as below:
+```
+export ROS_MASTER_URI=http://localhost:11311
+export ROS_HOSTNAME=localhost
+```
+
 Create a catkin workspace:
 - $ cd TSRT10_sim
 - $ mkdir catkin_ws
