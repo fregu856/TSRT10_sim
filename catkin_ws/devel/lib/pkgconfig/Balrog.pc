@@ -1,0 +1,8 @@
+prefix=/home/fregu856/TSRT10_sim/catkin_ws/devel
+
+Name: Balrog
+Description: Description of Balrog
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/fregu856/TSRT10_sim/catkin_ws/devel/lib 
+Requires: 
