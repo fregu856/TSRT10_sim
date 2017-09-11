@@ -16,6 +16,7 @@ Reset the ROS IP addresses:
 export ROS_MASTER_URI=http://localhost:11311
 export ROS_HOSTNAME=localhost
 ```
+- $ source ~/.bashrc
 
 Create a catkin workspace:
 - $ cd TSRT10_sim
@@ -57,10 +58,21 @@ If this doesn't work, open another terminal and do this FIRST:
 - $ rosrun gazebo_ros gzclient  
 
 Run a test controller to check that everything is working:  
-Place "test_controller.py" in ~/AA203/AA203_project/catkin_ws/src/turtlebot_control/scripts, make it executable and build the package.  
-$ roslaunch asl_turtlebot turtlebot_sim.launch  
-$ rosrun turtlebot_control test_controller.py (in another terminal)  
-The robot should now move to the coordinate (1, 1).    
+- Place "test_controller.py" in ~/TSRT10_sim/catkin_ws/src/Balrog/python_scripts, make it executable and build the package.  
+- $ roslaunch asl_turtlebot turtlebot_sim.launch  
+- $ rosrun Balrog test_controller.py (in another terminal)  
+- The robot should now move to the coordinate (1, 1).    
+
+Simulate the robot in the TSRT10 test area:
+- Create a launch directory in ~/TSRT10_sim/catkin_ws/src/Balrog.
+- Place the file Balrog_launch.launch in the launch directory.
+
+
+
+Test area:
+- The square is 8x8 meters.
+- All obstacles are 1x1 meter squares.
+
 
 *******
 
